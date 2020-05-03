@@ -6,7 +6,7 @@ Created on Sun May  3 12:17:54 2020
 """
 import pandas as pd
 
-#generate graphs for hospitals/other centers - Classyfing Risk 
+#generate graphs for classifying risk of all hospitals in a county
 df = pd.read_csv('Nassau_HospitalData.csv')
 ax = df.plot(kind='scatter',
              x='Number of Confirmed Cases in City',
