@@ -7,6 +7,10 @@ Created on Sun May  3 14:06:00 2020
 import pandas as pd
 import numpy as np
 from scipy import interpolate
+import requests
+
+# receives county data from API
+results = requests.get("https://health.data.ny.gov/resource/xdss-u53e.json?county=Nassau")
 
 # outputs the predicted number of cases and the percent increase in cases for the next 3 days
 dataFrame = pd.read_csv('NumCases_Nassau.csv')
