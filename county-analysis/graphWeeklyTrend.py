@@ -14,7 +14,7 @@ x = dataFrame['Date']
 y = dataFrame['NoOfCases']
 plt.plot(x, y, 'ro-')
 dataFrame[['Date','NoOfCases','NoOfCases']].apply(lambda row: plt.text(*row, va='top'),axis=1)
-plt.title('Confirmed COVID-19 Cases in Maharashtra from the Past 7 Days')
+plt.title('Confirmed COVID-19 Cases in Maharashtra, India from the Past 7 Days')
 plt.xlabel('Date')
 plt.ylabel('No. Of Cases')
 plt.show()
